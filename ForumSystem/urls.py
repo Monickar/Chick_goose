@@ -32,5 +32,6 @@ urlpatterns = [
     url(r'^admin-home/', views.topic_manage),  # 帖子管理，也是主页面
     url(r'^kind-manage/', views.kind_manage),  # 板块管理
     url(r'^single-an-(?P<aid>\d+)/', views.single_an),  # 单个公告显示
+    url(r'^sg/',views.sg), #公告
     path('sign_up/',views.register),
 ]

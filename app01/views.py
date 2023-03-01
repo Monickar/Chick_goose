@@ -524,3 +524,7 @@ def register(request):
             response = {'msg': '', 'status': False}
             response['msg'] = '注册成功，请返回登陆界面重新登录'
             return HttpResponse(json.dumps(response))
+
+def sg(request):
+    print("request success~")
+    return render(request, 'sg.html')
